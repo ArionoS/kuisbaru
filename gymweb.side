@@ -1,0 +1,188 @@
+{
+  "id": "89e9a709-2fac-4913-b2ff-e560b106bca1",
+  "version": "2.0",
+  "name": "gymweb",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "901bb36b-0f42-4361-9a1d-0765569f62d3",
+    "name": "all",
+    "commands": [{
+      "id": "d6508b3c-4d46-46c9-9310-db75d06799d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e28ee29a-fd40-48e7-ada4-af65b975b8ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "409dcdc7-5810-4ee1-971d-4183f966ed80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-menu-wrapper > .navbar-menu-wrapper",
+      "targets": [
+        ["css=.navbar-menu-wrapper > .navbar-menu-wrapper", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf595ca4-7120-4405-901e-09dcd0ac7243",
+      "comment": "",
+      "command": "click",
+      "target": "id=UserDropdown",
+      "targets": [
+        ["id=UserDropdown", "id"],
+        ["linkText=Hello, Rakha !", "linkText"],
+        ["css=#UserDropdown", "css:finder"],
+        ["xpath=//a[@id='UserDropdown']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d3d5e1-61c0-4992-a7d3-adcb89f8ebd4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"],
+        ["css=.dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Out')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"event.preventDefault();\n                                                     document.getElementById('logout-form').submit();\"]", "xpath:attributes"],
+        ["xpath=//a[@href='http://127.0.0.1:8000/logout']", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bc28962-bae0-4dad-b7ac-3470d9fe4b78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign-in-form > .form-group:nth-child(3) .input-group-append",
+      "targets": [
+        ["css=.sign-in-form > .form-group:nth-child(3) .input-group-append", "css:finder"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a46c6d39-5ef5-42b9-af33-fe99f0354cbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=.sign-in-form #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f2973d2-26a8-49de-86f8-a7bc5a1dbd49",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=.sign-in-form #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "56e2ee79-4311-4d50-92fc-62672d279b8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(4) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f2a6afc-e434-4d8f-bc7d-77aadb197473",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(4) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "a08644b4-87f6-416d-89e1-d9aee87f0b04",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(4) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fb8fe7d5-4c80-43c2-a6ec-6b2013d4ad57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-hMqMXs:nth-child(1) .sc-jzJRlG",
+      "targets": [
+        ["css=.sc-hMqMXs:nth-child(1) .sc-jzJRlG", "css:finder"],
+        ["xpath=//img[@alt='Artikel']", "xpath:img"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c1e18ec-c597-4dd7-8ebc-6a65f3e31b35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=NGE - GYM",
+      "targets": [
+        ["linkText=NGE - GYM", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'NGE - GYM')]", "xpath:link"],
+        ["xpath=//a[@href='http://127.0.0.1:8000']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'NGE - GYM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e61f3749-737a-4b2e-84bd-1df52d6c81c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=NGE - GYM",
+      "targets": [
+        ["linkText=NGE - GYM", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'NGE - GYM')]", "xpath:link"],
+        ["xpath=//a[@href='http://127.0.0.1:8000']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'NGE - GYM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "438821ba-fe6d-4321-aa80-2a83cac4506c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["901bb36b-0f42-4361-9a1d-0765569f62d3"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}
