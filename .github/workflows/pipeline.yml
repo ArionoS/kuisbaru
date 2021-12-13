@@ -1,4 +1,4 @@
-name: laravel-cicd
+name: laravel
 
 on:
   push:
